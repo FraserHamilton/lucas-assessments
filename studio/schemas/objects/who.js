@@ -1,12 +1,25 @@
 export default {
   type: 'object',
-  name: 'hero',
-  title: 'Hero',
+  name: 'who',
+  title: 'Who',
   fields: [
     {
       name: 'heading',
       type: 'string',
       title: 'Heading'
+    },
+    {
+      name: 'tagline',
+      type: 'string',
+      title: 'Tag line'
+    },
+    {
+      name: 'personImage',
+      type: 'image',
+      title: 'Person image',
+      options: {
+        hotspot: true
+      }
     },
     {
       name: 'backgroundImage',
@@ -17,14 +30,9 @@ export default {
       }
     },
     {
-      name: 'cardHeading',
+      name: 'buttonText',
       type: 'string',
-      title: 'Card Heading'
-    },
-    {
-      name: 'cardText',
-      type: 'portableText',
-      title: 'Card Text'
+      title: 'Button text'
     }
   ],
   preview: {
@@ -35,7 +43,7 @@ export default {
     prepare({ title, media }) {
       return {
         title,
-        subtitle: 'Hero section',
+        subtitle: 'Who section',
         media
       }
     }

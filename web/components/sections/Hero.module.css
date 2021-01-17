@@ -1,23 +1,23 @@
-@import '../../styles/custom-media.css';
-@import '../../styles/custom-properties.css';
+@import "../../styles/custom-media.css";
+@import "../../styles/custom-properties.css";
 
-.root {
-  composes: center from '../../styles/shared.module.css';
+.wrapper {
+  position: relative;
+  margin-bottom: 12rem;
+}
+
+.hero {
+  display: flex;
   position: relative;
   background-color: var(--color-black, #000);
   color: var(--color-white, #fff);
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center center;
-  padding-bottom: 2rem;
-
-  @media (--media-min-medium) {
-    padding-bottom: 4rem;
-  }
 }
 
-.root::before {
-  content: '';
+.hero::before {
+  content: "";
   position: absolute;
   top: 50%;
   left: 0;
@@ -28,55 +28,56 @@
 }
 
 .content {
-  width: 100%;
-  max-width: var(--width-small);
-  padding: 0 1.5em;
+  width: 50%;
+  text-align: center;
+  height: 80vh;
   box-sizing: border-box;
+  padding-top: 3rem;
   z-index: 1;
+  display: flex;
+  justify-content: center;
 }
 
 .title {
-  position: relative;
+  width: 50%;
   font-weight: 600;
-  font-size: var(--font-title2-size);
-  line-height: var(--font-title2-line-height);
+  font-size: var(--font-title1-size);
+  line-height: var(--font-title1-line-height);
   text-shadow: 0 1px 1px rgba(0, 0, 0, 0.5);
   margin: 0;
   padding: 0;
-  padding-top: 12.5rem;
-
-  @media (--media-min-medium) {
-    font-size: var(--font-title1-size);
-    line-height: var(--font-title1-line-height);
-    padding-top: 15rem;
-  }
 }
 
-.tagline {
+.card {
   position: relative;
+  color: #ffffff;
+  background-color: #4950ba;
+  position: absolute;
+  bottom: 0;
+  margin-bottom: -6rem;
+  margin-left: 10%;
+  width: 30%;
+  padding: 2rem;
+  z-index: 2;
+}
+
+.cardText {
+  width: 75%;
+}
+
+.cardTitle {
+  font-size: var(--font-title3-size);
+  line-height: var(--font-title3-line-height);
   margin: 0;
   padding: 0;
-  margin-top: 0.5em;
-  margin-bottom: 1rem;
-  text-shadow: 0 1px 1px rgba(0, 0, 0, 0.5);
-
-  @media (--media-min-medium) {
-    font-size: var(--font-large-size);
-    line-height: var(--font-large-line-height);
-  }
 }
 
-.tagline > p {
-  margin: 0;
-}
-
-.ctas {
-  margin-top: 3rem;
-  display: flex;
-}
-
-.ctas > *:not(:first-child) {
-  margin-left: 1rem;
+.cardButton {
+  position: absolute;
+  padding: 1rem;
+  bottom: 0;
+  right: 0;
+  background-color: #333333;
 }
 
 .root p a {

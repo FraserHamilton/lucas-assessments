@@ -1,0 +1,31 @@
+@import "../../styles/custom-media.css";
+@import "../../styles/custom-properties.css";
+
+.root {
+  padding: 2rem 10%;
+  background-color: #eeeeee;
+}
+
+.root p a {
+  color: inherit;
+}
+
+.heading {
+  margin: 0;
+  padding: 0;
+  font-size: var(--font-title2-size);
+  line-height: var(--font-title2-line-height);
+  margin-bottom: 3rem;
+}
+
+.footer {
+  padding-top: 2rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.steps {
+  display: flex;
+  flex-direction: row;
+}

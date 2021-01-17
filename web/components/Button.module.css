@@ -1,0 +1,8 @@
+.root {
+  font-size: var(--font-base-size);
+  line-height: var(--font-base-line-height);
+  background-color: #333333;
+  color: #fff;
+  border: none;
+  padding: 1rem 2.5rem;
+}

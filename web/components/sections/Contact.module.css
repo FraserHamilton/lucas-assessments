@@ -1,0 +1,37 @@
+@import "../../styles/custom-media.css";
+@import "../../styles/custom-properties.css";
+
+.container {
+  padding: 2rem 10%;
+}
+
+.root p a {
+  color: inherit;
+}
+
+.title {
+  margin: 0;
+  padding: 0;
+  font-size: var(--font-title2-size);
+  line-height: var(--font-title2-line-height);
+  margin-bottom: 3rem;
+}
+
+.labelGroups {
+  display: flex;
+}
+
+.mapContainer {
+  background-color: #4950ba;
+  height: 47vh;
+  width: 100%;
+  position: relative;
+}
+
+.map {
+  height: 50vh;
+  width: 60%;
+  position: absolute;
+  left: 2rem;
+  top: -3rem;
+}
