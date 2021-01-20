@@ -2,7 +2,7 @@
   --wide-container: 60rem;
   --narrow-container: 40rem;
 
-  --font-family-sans: -apple-system, BlinkMacSystemFont, sans-serif;
+  --font-family-sans: "Roboto", sans-serif;
 
   --color-black: #202123;
   --color-dark-gray: #32373e;
@@ -14,9 +14,9 @@
 
   /* Typography */
   --unit: 24;
-  --font-micro-size: calc(10 / var(--unit) * 1rem); /* 10px */
-  --font-micro-line-height: calc(12 / 10); /* 12px */
-  --font-small-size: calc(18 / var(--unit) * 1rem); /* 14px */
+  --font-micro-size: calc(16 / var(--unit) * 1rem); /* 16px */
+  --font-micro-line-height: calc(19 / 16); /* 19px */
+  --font-small-size: calc(18 / var(--unit) * 1rem); /* 18px */
   --font-small-line-height: calc(21 / 18); /* 21px */
   --font-base-size: 24px; /* 24px */
   --font-base-line-height: calc(28 / var(--unit)); /* 28px */

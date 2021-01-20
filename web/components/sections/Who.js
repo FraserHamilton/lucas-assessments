@@ -27,8 +27,11 @@ function Who(props) {
               <h3 className={styles.heading}>{heading}</h3>
               <p className={styles.tag}>{tagline}</p>
             </div>
-            <div>
-              <Button text={buttonText} />
+            <img className={styles.personImageMobile} src={urlFor(personImage)} />
+            <div className={styles.buttonContainer}>
+              <div className={styles.buttonInner}>
+                <Button text={buttonText} />
+              </div>
             </div>
           </div>
           <img className={styles.personImage} src={urlFor(personImage)} />

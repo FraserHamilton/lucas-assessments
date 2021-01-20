@@ -1,3 +1,6 @@
+@import "../styles/custom-media.css";
+@import "../styles/custom-properties.css";
+
 .root {
   font-size: var(--font-base-size);
   line-height: var(--font-base-line-height);
@@ -5,4 +8,9 @@
   color: #fff;
   border: none;
   padding: 1rem 2.5rem;
+  @media (--media-max-medium) {
+    font-size: var(--font-small-size);
+    line-height: var(--font-small-line-height);
+    padding: 0.8rem 1.25rem;
+  }
 }

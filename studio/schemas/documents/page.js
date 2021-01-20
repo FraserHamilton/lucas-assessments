@@ -23,6 +23,7 @@ export default {
         { type: 'imageSection' },
         { type: 'mailchimp' },
         { type: 'textSection' },
+        { type: 'testimonials' },
         { type: 'who' },
         { type: 'how' },
         { type: 'contact' }

@@ -18,6 +18,8 @@ import route from './documents/route'
 import schemaTypes from 'all:part:@sanity/base/schema-type'
 import simplePortableText from './objects/simplePortableText'
 import siteConfig from './documents/siteConfig'
+import testimonial from './objects/testimonial'
+import testimonials from './objects/testimonials'
 import textSection from './objects/textSection'
 import who from './objects/who'
 
@@ -52,6 +54,8 @@ export default createSchema({
     route,
     simplePortableText,
     siteConfig,
-    textSection
+    textSection,
+    testimonials,
+    testimonial
   ])
 })

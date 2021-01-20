@@ -1,0 +1,43 @@
+@import "../../styles/custom-media.css";
+@import "../../styles/custom-properties.css";
+
+.root {
+  padding: 2rem 0;
+}
+
+.heading {
+  margin: 0;
+  padding: 0 10%;
+  font-size: var(--font-title2-size);
+  line-height: var(--font-title2-line-height);
+  margin-bottom: 3rem;
+
+  @media (--media-max-medium) {
+    font-size: var(--font-title3-size);
+    line-height: var(--font-title3-line-height);
+    margin-bottom: 2rem;
+  }
+}
+
+.buttonGroup {
+  display: flex;
+  justify-content: center;
+  margin-top: 3rem;
+}
+
+.buttonGroup button {
+  background-color: #333333;
+  color: #fff;
+  padding: 0.8rem 2rem;
+  padding-left: 2.5rem;
+  border: none;
+  @media (--media-max-medium) {
+    padding: 0.5rem 2rem;
+  }
+}
+
+.flip {
+  transform: scaleX(-1);
+  padding-right: 2.5rem;
+  padding-left: 2rem;
+}

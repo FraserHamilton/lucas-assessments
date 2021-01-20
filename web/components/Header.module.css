@@ -9,6 +9,11 @@
   box-sizing: border-box;
   padding: 0 10%;
   background-color: #4950ba;
+  @media (--media-max-medium) {
+    padding: 5%;
+    display: flex;
+    justify-content: space-between;
+  }
 }
 
 .root a {
@@ -23,6 +28,9 @@
 
 .branding {
   font-size: var(--font-title3-size);
+  @media (--media-max-medium) {
+    font-size: var(--font-base-size);
+  }
   font-weight: inherit;
   margin: 0;
   padding: 0;
@@ -59,7 +67,9 @@
     left: 0;
     top: 100%;
     width: 100%;
-    background-color: var(--color-black, #000);
+    background-color: #4950ba;
+    padding: 0;
+
     color: var(--color-white, #fff);
 
     @nest .root[data-show-nav="true"] & {
@@ -113,7 +123,7 @@
   background: none;
   color: inherit;
   margin: 0;
-  padding: 1.5rem;
+  padding: 0.5rem;
   outline: none;
 
   @media (--media-min-medium) {

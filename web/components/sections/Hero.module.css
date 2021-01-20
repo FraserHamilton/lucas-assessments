@@ -14,6 +14,12 @@
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center center;
+
+  @media (--media-max-medium) {
+    transform: scaleX(-1);
+    background-position: right -5rem bottom;
+    background-size: cover;
+  }
 }
 
 .hero::before {
@@ -36,16 +42,29 @@
   z-index: 1;
   display: flex;
   justify-content: center;
+  @media (--media-max-medium) {
+    height: 60vh;
+    transform: scaleX(-1);
+    width: 100%;
+  }
 }
 
 .title {
-  width: 50%;
   font-weight: 600;
-  font-size: var(--font-title1-size);
-  line-height: var(--font-title1-line-height);
   text-shadow: 0 1px 1px rgba(0, 0, 0, 0.5);
   margin: 0;
   padding: 0;
+  font-size: var(--font-title2-size);
+  line-height: var(--font-title2-line-height);
+  text-align: center;
+  width: 80%;
+
+  @media (--media-min-medium) {
+    font-size: var(--font-title1-size);
+    line-height: var(--font-title1-line-height);
+    width: 50%;
+    text-align: left;
+  }
 }
 
 .card {
@@ -59,17 +78,34 @@
   width: 30%;
   padding: 2rem;
   z-index: 2;
+
+  @media (--media-max-medium) {
+    width: 70%;
+    padding: 1rem;
+    margin-left: 5%;
+  }
 }
 
 .cardText {
   width: 75%;
+  @media (--media-max-medium) {
+    font-size: var(--font-small-size);
+    line-height: var(--font-small-line-height);
+    width: 85%;
+  }
 }
 
 .cardTitle {
-  font-size: var(--font-title3-size);
-  line-height: var(--font-title3-line-height);
   margin: 0;
   padding: 0;
+  margin-bottom: 0.5rem;
+
+  @media (--media-min-medium) {
+    margin-bottom: 1rem;
+
+    font-size: var(--font-title3-size);
+    line-height: var(--font-title3-line-height);
+  }
 }
 
 .cardButton {
@@ -78,6 +114,9 @@
   bottom: 0;
   right: 0;
   background-color: #333333;
+  @media (--media-max-medium) {
+    padding: 0.5rem;
+  }
 }
 
 .root p a {

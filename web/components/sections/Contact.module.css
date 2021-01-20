@@ -5,20 +5,25 @@
   padding: 2rem 10%;
 }
 
-.root p a {
-  color: inherit;
-}
-
 .title {
   margin: 0;
   padding: 0;
   font-size: var(--font-title2-size);
   line-height: var(--font-title2-line-height);
   margin-bottom: 3rem;
+
+  @media (--media-max-medium) {
+    font-size: var(--font-title3-size);
+    line-height: var(--font-title3-line-height);
+    margin-bottom: 2rem;
+  }
 }
 
 .labelGroups {
   display: flex;
+  @media (--media-max-medium) {
+    flex-direction: column;
+  }
 }
 
 .mapContainer {
@@ -26,6 +31,10 @@
   height: 47vh;
   width: 100%;
   position: relative;
+  @media (--media-max-medium) {
+    margin-top: 1rem;
+    height: 42vh;
+  }
 }
 
 .map {
@@ -34,4 +43,11 @@
   position: absolute;
   left: 2rem;
   top: -3rem;
+
+  @media (--media-max-medium) {
+    width: 80%;
+    left: 1rem;
+    top: -2rem;
+    height: 45vh;
+  }
 }
