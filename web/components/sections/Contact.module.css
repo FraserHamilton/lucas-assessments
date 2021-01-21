@@ -6,6 +6,7 @@
   padding-bottom: 0;
   @media (--media-max-medium) {
     padding: 2rem 5%;
+    padding-bottom: 0;
   }
 }
 
@@ -28,20 +29,38 @@
   flex-direction: column;
 }
 
-.mapContainer {
+.bottomContainer {
   background-color: #4950ba;
-  padding: 2rem 10%;
+  padding: 2rem 5%;
+  padding-top: 1rem;
   box-sizing: border-box;
   width: 100%;
   position: relative;
   color: #fff;
-  padding-bottom: 4rem;
+  @media (--media-min-medium) {
+    padding: 2rem 10%;
+    padding-bottom: 4rem;
+  }
+}
+
+.mapContainer {
+  height: 50vh;
+  @media (--media-min-medium) {
+    position: absolute;
+    right: 4rem;
+    bottom: 2rem;
+    height: 62vh;
+    width: 50%;
+  }
 }
 
 .map {
-  height: 62vh;
-  width: 50%;
-  position: absolute;
-  right: 4rem;
-  bottom: 2rem;
+  height: 100%;
+  width: 100%;
+}
+
+.mobilePadCollapse {
+  @media (--media-max-medium) {
+    margin-bottom: 1rem;
+  }
 }

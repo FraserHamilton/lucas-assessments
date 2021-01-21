@@ -4,9 +4,9 @@ import SimpleBlockContent from "./SimpleBlockContent";
 import styles from "./LabelGroup.module.css";
 
 function labelGroup(props) {
-  const { label, text } = props;
+  const { label, text, className } = props;
   return (
-    <div className={styles.root}>
+    <div className={`${styles.root} ${className}`}>
       <div>
         <h3>{label}</h3>
         <SimpleBlockContent blocks={text} />

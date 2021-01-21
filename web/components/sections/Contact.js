@@ -12,17 +12,23 @@ function Contact(props) {
         <h2 className={styles.title}>{heading}</h2>
         <div className={styles.labelGroups}>
           <LabelGroup {...labelGroups[0]} key={labelGroups[0]._key} />
-          <LabelGroup {...labelGroups[1]} key={labelGroups[1]._key} />
+          <LabelGroup
+            // className={styles.mobilePadCollapse}
+            {...labelGroups[1]}
+            key={labelGroups[1]._key}
+          />
         </div>
       </div>
-      <div className={styles.mapContainer}>
+      <div className={styles.bottomContainer}>
         <LabelGroup {...labelGroups[2]} key={labelGroups[2]._key} />
-        <iframe
-          className={styles.map}
-          frameBorder="0"
-          src={`https://www.google.com/maps/embed/v1/place?key=AIzaSyDbzTSvhcymlgy7G_Wsaet9VtnkbHvpVrQ&q=${mapKey}`}
-          allowFullScreen
-        ></iframe>
+        <div className={styles.mapContainer}>
+          <iframe
+            className={styles.map}
+            frameBorder="0"
+            src={`https://www.google.com/maps/embed/v1/place?key=AIzaSyDbzTSvhcymlgy7G_Wsaet9VtnkbHvpVrQ&q=${mapKey}`}
+            allowFullScreen
+          ></iframe>
+        </div>
       </div>
     </div>
   );
