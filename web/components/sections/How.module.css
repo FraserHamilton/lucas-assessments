@@ -4,6 +4,9 @@
 .root {
   padding: 2rem 10%;
   background-color: #eeeeee;
+  @media (--media-max-medium) {
+    padding: 2rem 5%;
+  }
 }
 
 .root p a {

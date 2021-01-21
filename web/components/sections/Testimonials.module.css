@@ -16,6 +16,7 @@
     font-size: var(--font-title3-size);
     line-height: var(--font-title3-line-height);
     margin-bottom: 2rem;
+    padding: 0 5%;
   }
 }
 
@@ -38,6 +39,4 @@
 
 .flip {
   transform: scaleX(-1);
-  padding-right: 2.5rem;
-  padding-left: 2rem;
 }

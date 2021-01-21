@@ -10,15 +10,13 @@ function Contact(props) {
     <div className={styles.root}>
       <div className={styles.container}>
         <h2 className={styles.title}>{heading}</h2>
-        {labelGroups && (
-          <div className={styles.labelGroups}>
-            {labelGroups.map((labelGroup) => (
-              <LabelGroup {...labelGroup} key={labelGroup._key} />
-            ))}
-          </div>
-        )}
+        <div className={styles.labelGroups}>
+          <LabelGroup {...labelGroups[0]} key={labelGroups[0]._key} />
+          <LabelGroup {...labelGroups[1]} key={labelGroups[1]._key} />
+        </div>
       </div>
       <div className={styles.mapContainer}>
+        <LabelGroup {...labelGroups[2]} key={labelGroups[2]._key} />
         <iframe
           className={styles.map}
           frameBorder="0"

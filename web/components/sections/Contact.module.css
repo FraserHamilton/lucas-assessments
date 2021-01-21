@@ -3,6 +3,10 @@
 
 .container {
   padding: 2rem 10%;
+  padding-bottom: 0;
+  @media (--media-max-medium) {
+    padding: 2rem 5%;
+  }
 }
 
 .title {
@@ -10,7 +14,7 @@
   padding: 0;
   font-size: var(--font-title2-size);
   line-height: var(--font-title2-line-height);
-  margin-bottom: 3rem;
+  margin-bottom: 4rem;
 
   @media (--media-max-medium) {
     font-size: var(--font-title3-size);
@@ -21,33 +25,23 @@
 
 .labelGroups {
   display: flex;
-  @media (--media-max-medium) {
-    flex-direction: column;
-  }
+  flex-direction: column;
 }
 
 .mapContainer {
   background-color: #4950ba;
-  height: 47vh;
+  padding: 2rem 10%;
+  box-sizing: border-box;
   width: 100%;
   position: relative;
-  @media (--media-max-medium) {
-    margin-top: 1rem;
-    height: 42vh;
-  }
+  color: #fff;
+  padding-bottom: 4rem;
 }
 
 .map {
-  height: 50vh;
-  width: 60%;
+  height: 62vh;
+  width: 50%;
   position: absolute;
-  left: 2rem;
-  top: -3rem;
-
-  @media (--media-max-medium) {
-    width: 80%;
-    left: 1rem;
-    top: -2rem;
-    height: 45vh;
-  }
+  right: 4rem;
+  bottom: 2rem;
 }

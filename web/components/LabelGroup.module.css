@@ -3,11 +3,7 @@
 
 .root {
   flex: 1;
-  text-align: center;
-  @media (--media-max-medium) {
-    text-align: left;
-    margin-bottom: 1rem;
-  }
+  margin-bottom: 2rem;
 }
 
 .root p {
@@ -29,6 +25,5 @@
   @media (--media-min-medium) {
     font-size: var(--font-title3-size);
     line-height: var(--font-title3-line-height);
-    margin: 0;
   }
 }
