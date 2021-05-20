@@ -27,7 +27,8 @@ function Contact(props) {
             </div>
           </div>
           <div className={styles.formContainer}>
-            <form name="contact" method="POST" netlify>
+            <form name="contact" netlify>
+              <input type="hidden" name="form-name" value="contact" />
               <div className={styles.formRow}>
                 <p>Name</p>
                 <input type="text" name="name" className={styles.formInput} />
