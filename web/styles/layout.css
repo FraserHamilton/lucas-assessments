@@ -18,8 +18,17 @@ body,
 :global(#__next),
 :global(.container) {
   height: 100%;
+  color: #201f1d;
 }
 
 :global(.content) {
   min-height: calc(100% - 84px - 218px);
+}
+
+@font-face {
+  font-family: "Helvetica Neue";
+  src: url("/static/fonts/HelveticaNeue-Medium.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
 }

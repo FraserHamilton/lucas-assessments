@@ -2,41 +2,54 @@
 @import "../../styles/custom-properties.css";
 
 .root {
-  padding: 2rem 0;
+  background-color: #ffff;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 5rem;
+}
+
+.content {
+  display: flex;
+  @media (--media-max-medium) {
+    flex-direction: column;
+  }
+}
+
+.textContainer {
+  flex: 2.5 2.5 0;
+  padding-left: 2rem;
+  @media (--media-max-medium) {
+    display: none;
+  }
+}
+
+.accTextContainer {
+  padding-bottom: 1rem;
+  @media (--media-min-medium) {
+    display: none;
+  }
+}
+
+.wrapper {
+  width: 80%;
+}
+
+.triggers {
+  display: flex;
+  flex-direction: column;
+  flex: 1 1 0;
 }
 
 .heading {
   margin: 0;
-  padding: 0 10%;
+  padding: 0;
   font-size: var(--font-title2-size);
   line-height: var(--font-title2-line-height);
   margin-bottom: 3rem;
-
   @media (--media-max-medium) {
     font-size: var(--font-title3-size);
     line-height: var(--font-title3-line-height);
-    margin-bottom: 2rem;
-    padding: 0 5%;
   }
-}
-
-.buttonGroup {
-  display: flex;
-  justify-content: center;
-  margin-top: 3rem;
-}
-
-.buttonGroup button {
-  background-color: #333333;
-  color: #fff;
-  padding: 0.8rem 2rem;
-  padding-left: 2.5rem;
-  border: none;
-  @media (--media-max-medium) {
-    padding: 0.5rem 2rem;
-  }
-}
-
-.flip {
-  transform: scaleX(-1);
 }

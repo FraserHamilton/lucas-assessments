@@ -2,6 +2,7 @@ import React, { useRef, useState } from "react";
 
 import ArrowIcon from "../icons/Arrow";
 import PropTypes from "prop-types";
+import SimpleBlockContent from "../SimpleBlockContent";
 import Slider from "react-slick";
 import Testimonial from "../Testimonial";
 import styles from "./Testimonials.module.css";
@@ -9,32 +10,36 @@ import styles from "./Testimonials.module.css";
 function Testimonials(props) {
   const { heading, testimonials } = props;
 
-  const sliderRef = useRef(null);
-
   const [selectedIndex, setSelectedIndex] = useState(0);
-
-  const settings = {
-    dots: false,
-    arrows: false,
-    infinite: true,
-    speed: 500,
-    slidesToShow: 2,
-    slidesToScroll: 1,
-    beforeChange: (current, next) => setSelectedIndex(next),
-    responsive: [
-      {
-        breakpoint: 675,
-        settings: {
-          slidesToShow: 1,
-        },
-      },
-    ],
-  };
 
   return (
     <div className={styles.root}>
-      <h3 className={styles.heading}>{heading}</h3>
-      <div className={styles.carouselContainer}>
+      <div className={styles.wrapper}>
+        <h3 className={styles.heading}>{heading}</h3>
+        <div className={styles.content}>
+          <div className={styles.triggers}>
+            {testimonials.map((t, i) => (
+              <div>
+                <Testimonial
+                  {...t}
+                  selected={selectedIndex === i}
+                  index={i}
+                  setSelectedIndex={setSelectedIndex}
+                />
+                {selectedIndex === i && (
+                  <div className={styles.accTextContainer}>
+                    <SimpleBlockContent blocks={testimonials[selectedIndex].text} />
+                  </div>
+                )}
+              </div>
+            ))}
+          </div>
+          <div className={styles.textContainer}>
+            <SimpleBlockContent blocks={testimonials[selectedIndex].text} />
+          </div>
+        </div>
+      </div>
+      {/* <div className={styles.carouselContainer}>
         <Slider {...settings} ref={sliderRef}>
           {testimonials.map((t, i) => (
             <Testimonial {...t} selected={selectedIndex === i} />
@@ -48,7 +53,7 @@ function Testimonials(props) {
             <ArrowIcon />
           </button>
         </div>
-      </div>
+      </div> */}
     </div>
   );
 }

@@ -8,26 +8,41 @@ function Contact(props) {
 
   return (
     <div className={styles.root}>
-      <div className={styles.container}>
-        <h2 className={styles.title}>{heading}</h2>
-        <div className={styles.labelGroups}>
-          <LabelGroup {...labelGroups[0]} key={labelGroups[0]._key} />
-          <LabelGroup
-            // className={styles.mobilePadCollapse}
-            {...labelGroups[1]}
-            key={labelGroups[1]._key}
-          />
-        </div>
-      </div>
-      <div className={styles.bottomContainer}>
-        <LabelGroup {...labelGroups[2]} key={labelGroups[2]._key} />
-        <div className={styles.mapContainer}>
-          <iframe
-            className={styles.map}
-            frameBorder="0"
-            src={`https://www.google.com/maps/embed/v1/place?key=AIzaSyDbzTSvhcymlgy7G_Wsaet9VtnkbHvpVrQ&q=${mapKey}`}
-            allowFullScreen
-          ></iframe>
+      <div className={styles.wrapper}>
+        <h3 className={styles.heading}>{heading}</h3>
+        <div className={styles.content}>
+          <div className={styles.textContainer}>
+            <div style={{ paddingRight: "1rem" }}>
+              <p>
+                Want to arrange an assessment, recieve more information on the services offered or
+                ask a question?
+              </p>
+              <p className={styles.contactLine}>
+                Contact Stuart using this form or at the email address below.
+              </p>
+              <div className={styles.emailContainer}>
+                <p>Email</p>
+                <p style={{ color: "#000", marginTop: "0.5rem" }}>stuart363lucas@btinternet.com</p>
+              </div>
+            </div>
+          </div>
+          <div className={styles.formContainer}>
+            <div className={styles.formRow}>
+              <p>Name</p>
+              <input className={styles.formInput} />
+            </div>
+            <div className={styles.formRow}>
+              <p>Email</p>
+              <input className={styles.formInput} />
+            </div>
+            <div className={styles.formRow}>
+              <p>Message</p>
+              <textarea rows="4" className={styles.formInput} />
+            </div>
+            <div className={styles.buttonContainer}>
+              <button className={styles.sendButton}>Send</button>
+            </div>
+          </div>
         </div>
       </div>
     </div>

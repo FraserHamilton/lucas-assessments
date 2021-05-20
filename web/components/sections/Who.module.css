@@ -2,68 +2,64 @@
 @import "../../styles/custom-properties.css";
 
 .root {
-  padding: 0 10%;
-  padding-bottom: 2rem;
-  @media (--media-max-medium) {
-    padding: 0;
-  }
-}
-
-.tiledBg {
-  background-repeat: repeat;
-  height: 50vh;
-  position: relative;
-  @media (--media-max-medium) {
-    height: 58vh;
-  }
-}
-
-.left {
-  width: 40%;
-  padding: 5% 0;
+  background-color: #ffff;
+  width: 100%;
   display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  @media (--media-max-medium) {
-    width: 100%;
-    padding-bottom: 0;
-  }
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 5rem;
+}
+
+.wrapper {
+  width: 80%;
 }
 
 .container {
-  height: 100%;
-  width: calc(100% - 4rem);
-  position: absolute;
-  background-color: #eeeeee;
-  padding: 0 2rem;
-  padding-right: 0rem;
-  box-sizing: border-box;
-  top: -2rem;
-  left: 2rem;
   display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-
+  justify-content: center;
   @media (--media-max-medium) {
-    padding: 1rem;
-    padding-bottom: 0;
-    height: auto;
-    width: calc(100% - 2rem);
+    flex-direction: column-reverse;
+  }
+}
+
+.textContainer {
+  width: 50%;
+  margin-right: 2rem;
+  padding-top: 2rem;
+  @media (--media-max-medium) {
+    width: 100%;
+  }
+}
+
+.footerText {
+  font-size: var(--font-small-size);
+  line-height: var(--font-small-line-height);
+  font-style: italic;
+  font-family: "Roboto";
+  margin-bottom: 1rem;
+  @media (--media-max-medium) {
+    font-size: var(--font-micro-size);
+    line-height: var(--font-micro-line-height);
   }
 }
 
 .personImage {
-  @media (--media-max-medium) {
-    display: none;
-  }
-  height: 100%;
+  width: 100%;
 }
 
-.personImageMobile {
-  @media (--media-min-medium) {
-    display: none;
+.signatureImage {
+  height: 4rem;
+  @media (--media-max-medium) {
+    width: 50%;
   }
-  width: 100%;
+}
+
+.accImage {
+  height: 3rem;
+  padding-top: 0.5rem;
+  @media (--media-max-medium) {
+    width: 50%;
+  }
 }
 
 .heading {
@@ -75,7 +71,19 @@
   @media (--media-max-medium) {
     font-size: var(--font-title3-size);
     line-height: var(--font-title3-line-height);
-    text-align: center;
+  }
+}
+
+.title {
+  margin: 0;
+  padding: 0;
+  font-size: var(--font-title3-size);
+  line-height: var(--font-title3-line-height);
+  font-family: "Helvetica Neue";
+  margin-bottom: 0.25rem;
+  @media (--media-max-medium) {
+    font-size: var(--font-title4-size);
+    line-height: var(--font-title4-line-height);
   }
 }
 
@@ -91,24 +99,12 @@
   }
 }
 
+.images {
+  display: flex;
+  justify-content: "center";
+  align-items: "center";
+}
+
 .root p a {
   color: inherit;
-}
-
-.buttonContainer {
-  @media (--media-max-medium) {
-    font-size: var(--font-micro-size);
-    line-height: var(--font-micro-line-height);
-    display: flex;
-    flex-direction: center;
-    justify-content: center;
-    position: relative;
-  }
-}
-
-.buttonInner {
-  @media (--media-max-medium) {
-    position: absolute;
-    margin-top: -4rem;
-  }
 }

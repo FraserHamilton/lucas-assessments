@@ -12,33 +12,28 @@ function urlFor(source) {
 }
 
 function Hero(props) {
-  const { heading, backgroundImage, cardHeading, cardText } = props;
+  const { heading, backgroundImage } = props;
 
-  const style = backgroundImage
-    ? {
-        backgroundImage: `url("${urlFor(backgroundImage).width(2000).auto("format").url()}")`,
-      }
-    : {};
+  // const style = backgroundImage
+  //   ? {
+  //       backgroundImage: `url("${urlFor(backgroundImage).width(2000).auto("format").url()}")`,
+  //     }
+  //   : { backgroundColor: "#fff" };
 
   return (
-    <div className={styles.wrapper}>
-      <div className={styles.hero} style={style}>
+    <div className={styles.hero}>
+      <img className={styles.letters} src={urlFor(backgroundImage)} />
+      <div className={styles.wrapper}>
         <div className={styles.content}>
-          <h1 className={styles.title}>{heading}</h1>
+          <h1 className={styles.title}>
+            Dyslexia Assessments
+            <br />
+            Throughout{" "}
+            <span className={styles.accentText}>
+              Edinburgh <br /> And The Lothians
+            </span>
+          </h1>
         </div>
-      </div>
-      <div className={styles.card}>
-        <h3 className={styles.cardTitle}>{cardHeading}</h3>
-        <div className={styles.cardText}>
-          {cardText && <SimpleBlockContent blocks={cardText} />}
-        </div>
-        <Link>
-          <a>
-            <div className={styles.cardButton}>
-              <ArrowIcon style={{ display: "block" }} />
-            </div>
-          </a>
-        </Link>
       </div>
     </div>
   );

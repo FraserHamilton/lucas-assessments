@@ -72,6 +72,8 @@ class Header extends Component {
     const { title = "Missing title", navItems, router, logo } = this.props;
     const { showNav } = this.state;
 
+    const splitTitle = title.split("c");
+
     return (
       <div className={styles.root} data-show-nav={showNav}>
         <div className={styles.brandingContainer}>
@@ -85,7 +87,10 @@ class Header extends Component {
             as="/"
             prefetch
           >
-            <h1 className={styles.branding}>{title}</h1>
+            <h1 className={styles.branding}>
+              {splitTitle[0] + "c"}
+              <span className={styles.accentText}>{splitTitle[1]}</span>
+            </h1>
           </Link>
         </div>
         <nav className={styles.nav}>

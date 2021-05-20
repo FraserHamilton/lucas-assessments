@@ -2,11 +2,16 @@
 @import "../../styles/custom-properties.css";
 
 .root {
-  padding: 2rem 10%;
-  background-color: #eeeeee;
-  @media (--media-max-medium) {
-    padding: 2rem 5%;
-  }
+  background-color: #ffff;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 5rem;
+}
+
+.wrapper {
+  width: 80%;
 }
 
 .root p a {
@@ -26,6 +31,7 @@
   font-size: var(--font-title2-size);
   line-height: var(--font-title2-line-height);
   margin-bottom: 3rem;
+  font-family: "Helvetica Neue";
 
   @media (--media-max-medium) {
     font-size: var(--font-title3-size);
@@ -35,9 +41,26 @@
 }
 
 .content {
+  display: flex;
   @media (--media-max-medium) {
-    display: flex;
-    flex-direction: row-reverse;
+    flex-direction: column;
+  }
+}
+
+.column {
+  justify-content: center;
+  align-items: center;
+  flex: 1;
+  text-align: center;
+  @media (--media-max-medium) {
+    padding-bottom: 1.5rem;
+  }
+}
+
+.rightPad {
+  padding-right: 3rem;
+  @media (--media-max-medium) {
+    padding-right: 0;
   }
 }
 
@@ -53,44 +76,16 @@
   }
 }
 
-.steps {
-  display: flex;
-  flex: 1;
-  flex-direction: column;
-  height: 100%;
-  @media (--media-min-medium) {
-    padding-left: 20%;
-    height: auto;
-  }
-}
-
-.row {
-  display: flex;
-  flex: 1;
-  @media (--media-max-medium) {
-    flex-direction: column;
-  }
-}
-
 .iconContainer {
-  background-color: #4950ba;
-  padding: 0.5rem;
-  border-radius: 50%;
-  width: 1.5rem;
-  height: 1.5rem;
-  @media (--media-max-medium) {
-    width: 1rem;
-    height: 1rem;
-  }
+  display: flex;
+  justify-content: center;
 }
 
 .icon {
-  width: 1.5rem;
-  height: 1.5rem;
-  fill: #fff;
+  width: 4rem;
+  fill: var(--color-accent);
   @media (--media-max-medium) {
-    width: 1rem;
-    height: 1rem;
+    width: 2rem;
   }
 }
 
@@ -100,21 +95,18 @@
   }
 }
 
-.label {
-  font-weight: 600;
+.title {
+  margin: 0;
+  padding: 0;
+  font-size: var(--font-title3-size);
+  line-height: var(--font-title3-line-height);
+  font-family: "Helvetica Neue";
+  margin-bottom: 1rem;
   margin-top: 0.5rem;
-}
 
-.step {
-  display: flex;
-  justify-content: center;
-  flex: 1;
-  text-align: center;
-  align-items: center;
-}
-
-.button {
   @media (--media-max-medium) {
-    display: none;
+    font-size: var(--font-title4-size);
+    line-height: var(--font-title4-line-height);
+    margin-bottom: 0.5rem;
   }
 }

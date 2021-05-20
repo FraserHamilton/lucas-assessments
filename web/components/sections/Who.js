@@ -1,6 +1,7 @@
 import Button from "../Button";
 import PropTypes from "prop-types";
 import React from "react";
+import SimpleBlockContent from "../SimpleBlockContent";
 import client from "../../client";
 import imageUrlBuilder from "@sanity/image-url";
 import styles from "./Who.module.css";
@@ -10,17 +11,27 @@ function urlFor(source) {
 }
 
 function Who(props) {
-  const { heading, backgroundImage, tagline, buttonText, personImage } = props;
-
-  const style = backgroundImage
-    ? {
-        backgroundImage: `url("${urlFor(backgroundImage).width(400).auto("format").url()}")`,
-      }
-    : {};
+  const { heading, subheading, contentText, personImage, sigImage, accImage, tagline } = props;
 
   return (
     <div className={styles.root}>
-      <div className={styles.tiledBg} style={style}>
+      <div className={styles.wrapper}>
+        <h3 className={styles.heading}>{heading}</h3>
+        <div className={styles.container}>
+          <div className={styles.textContainer}>
+            <h2 className={styles.title}>{subheading}</h2>
+            <p className={styles.footerText}>{tagline}</p>
+            <SimpleBlockContent blocks={contentText} />
+            <div className={styles.images}>
+              <img className={styles.signatureImage} src={urlFor(sigImage)} />
+              <img className={styles.accImage} src={urlFor(accImage)} />
+            </div>
+          </div>
+          <div className={styles.imageContainer}>
+            <img className={styles.personImage} src={urlFor(personImage)} />
+          </div>
+        </div>
+        {/* <div className={styles.tiledBg} style={style}>
         <div className={styles.container}>
           <div className={styles.left}>
             <div>
@@ -36,6 +47,7 @@ function Who(props) {
           </div>
           <img className={styles.personImage} src={urlFor(personImage)} />
         </div>
+      </div> */}
       </div>
     </div>
   );

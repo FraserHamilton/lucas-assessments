@@ -9,6 +9,16 @@ export default {
       title: 'Heading'
     },
     {
+      name: 'subheading',
+      type: 'string',
+      title: 'Subheading'
+    },
+    {
+      name: 'contentText',
+      type: 'simplePortableText',
+      title: 'Content Text'
+    },
+    {
       name: 'tagline',
       type: 'string',
       title: 'Tag line'
@@ -22,17 +32,20 @@ export default {
       }
     },
     {
-      name: 'backgroundImage',
+      name: 'sigImage',
       type: 'image',
-      title: 'Background image',
+      title: 'Signature Image',
       options: {
         hotspot: true
       }
     },
     {
-      name: 'buttonText',
-      type: 'string',
-      title: 'Button text'
+      name: 'accImage',
+      type: 'image',
+      title: 'Accreditation Image',
+      options: {
+        hotspot: true
+      }
     }
   ],
   preview: {
