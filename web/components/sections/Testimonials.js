@@ -39,21 +39,6 @@ function Testimonials(props) {
           </div>
         </div>
       </div>
-      {/* <div className={styles.carouselContainer}>
-        <Slider {...settings} ref={sliderRef}>
-          {testimonials.map((t, i) => (
-            <Testimonial {...t} selected={selectedIndex === i} />
-          ))}
-        </Slider>
-        <div className={styles.buttonGroup}>
-          <button className={styles.flip} onClick={() => sliderRef.current.slickPrev()}>
-            <ArrowIcon />
-          </button>
-          <button onClick={() => sliderRef.current.slickNext()}>
-            <ArrowIcon />
-          </button>
-        </div>
-      </div> */}
     </div>
   );
 }

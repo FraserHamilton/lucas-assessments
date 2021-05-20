@@ -86,6 +86,10 @@
   }
 }
 
+.sendButton:hover {
+  background-color: #525cff;
+}
+
 .heading {
   margin: 0;
   padding: 0;

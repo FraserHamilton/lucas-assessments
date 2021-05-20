@@ -46,6 +46,8 @@ p {
 .root img {
   border-radius: 50%;
   margin-right: 0.5rem;
+  height: 3rem;
+  width: 3rem;
   @media (--media-max-medium) {
     height: 3rem;
     width: 3rem;
