@@ -40,12 +40,12 @@ function Contact(props) {
                 <p>Message</p>
                 <textarea type="text" name="message" rows="4" className={styles.formInput} />
               </div>
+              <div className={styles.buttonContainer}>
+                <button type="submit" className={styles.sendButton}>
+                  Send
+                </button>
+              </div>
             </form>
-            <div className={styles.buttonContainer}>
-              <button type="submit" className={styles.sendButton}>
-                Send
-              </button>
-            </div>
           </div>
         </div>
       </div>
