@@ -1,0 +1,55 @@
+@import "../../styles/custom-media.css";
+@import "../../styles/custom-properties.css";
+
+.root {
+  background-color: #ffff;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 5rem;
+}
+
+.content {
+  display: flex;
+  @media (--media-max-medium) {
+    flex-direction: column;
+  }
+}
+
+.textContainer {
+  flex: 2.5 2.5 0;
+  padding-left: 2rem;
+  @media (--media-max-medium) {
+    display: none;
+  }
+}
+
+.accTextContainer {
+  padding-bottom: 1rem;
+  @media (--media-min-medium) {
+    display: none;
+  }
+}
+
+.wrapper {
+  width: 80%;
+}
+
+.triggers {
+  display: flex;
+  flex-direction: column;
+  flex: 1 1 0;
+}
+
+.heading {
+  margin: 0;
+  padding: 0;
+  font-size: var(--font-title2-size);
+  line-height: var(--font-title2-line-height);
+  margin-bottom: 3rem;
+  @media (--media-max-medium) {
+    font-size: var(--font-title3-size);
+    line-height: var(--font-title3-line-height);
+  }
+}

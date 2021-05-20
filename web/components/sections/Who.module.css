@@ -1,0 +1,110 @@
+@import "../../styles/custom-media.css";
+@import "../../styles/custom-properties.css";
+
+.root {
+  background-color: #ffff;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 5rem;
+}
+
+.wrapper {
+  width: 80%;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  @media (--media-max-medium) {
+    flex-direction: column-reverse;
+  }
+}
+
+.textContainer {
+  width: 50%;
+  margin-right: 2rem;
+  padding-top: 2rem;
+  @media (--media-max-medium) {
+    width: 100%;
+  }
+}
+
+.footerText {
+  font-size: var(--font-small-size);
+  line-height: var(--font-small-line-height);
+  font-style: italic;
+  font-family: "Roboto";
+  margin-bottom: 1rem;
+  @media (--media-max-medium) {
+    font-size: var(--font-micro-size);
+    line-height: var(--font-micro-line-height);
+  }
+}
+
+.personImage {
+  width: 100%;
+}
+
+.signatureImage {
+  height: 4rem;
+  @media (--media-max-medium) {
+    width: 50%;
+  }
+}
+
+.accImage {
+  height: 3rem;
+  padding-top: 0.5rem;
+  @media (--media-max-medium) {
+    width: 50%;
+  }
+}
+
+.heading {
+  margin: 0;
+  padding: 0;
+  font-size: var(--font-title2-size);
+  line-height: var(--font-title2-line-height);
+  margin-bottom: 1rem;
+  @media (--media-max-medium) {
+    font-size: var(--font-title3-size);
+    line-height: var(--font-title3-line-height);
+  }
+}
+
+.title {
+  margin: 0;
+  padding: 0;
+  font-size: var(--font-title3-size);
+  line-height: var(--font-title3-line-height);
+  font-family: "Helvetica Neue";
+  margin-bottom: 0.25rem;
+  @media (--media-max-medium) {
+    font-size: var(--font-title4-size);
+    line-height: var(--font-title4-line-height);
+  }
+}
+
+.tag {
+  font-size: var(--font-small-size);
+  line-height: var(--font-small-line-height);
+  font-weight: 600;
+
+  @media (--media-max-medium) {
+    font-size: var(--font-micro-size);
+    line-height: var(--font-micro-line-height);
+    text-align: center;
+  }
+}
+
+.images {
+  display: flex;
+  justify-content: "center";
+  align-items: "center";
+}
+
+.root p a {
+  color: inherit;
+}

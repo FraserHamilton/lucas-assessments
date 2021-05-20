@@ -6,44 +6,38 @@ export default {
     {
       name: 'heading',
       type: 'string',
-      title: 'Heading',
-    },
-    {
-      name: 'tagline',
-      type: 'simplePortableText',
-      title: 'Tagline',
+      title: 'Heading'
     },
     {
       name: 'backgroundImage',
       type: 'image',
       title: 'Background image',
       options: {
-        hotspot: true,
-      },
+        hotspot: true
+      }
     },
     {
-      name: 'ctas',
-      type: 'array',
-      title: 'Call to actions',
-      of: [
-        {
-          title: 'Call to action',
-          type: 'cta',
-        },
-      ],
+      name: 'cardHeading',
+      type: 'string',
+      title: 'Card Heading'
     },
+    {
+      name: 'cardText',
+      type: 'portableText',
+      title: 'Card Text'
+    }
   ],
   preview: {
     select: {
       title: 'heading',
-      media: 'backgroundImage',
+      media: 'backgroundImage'
     },
     prepare({ title, media }) {
       return {
         title,
         subtitle: 'Hero section',
-        media,
-      };
-    },
-  },
-};
+        media
+      }
+    }
+  }
+}

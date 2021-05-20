@@ -1,0 +1,33 @@
+@import "../styles/custom-media.css";
+@import "../styles/custom-properties.css";
+
+.root {
+  display: flex;
+  flex: 1;
+  padding-top: 0.8rem;
+  @media (--media-max-medium) {
+    padding-left: 1rem;
+    padding-top: 0;
+  }
+}
+
+.vertical {
+  display: none;
+  @media (--media-max-medium) {
+    display: block;
+    padding-top: 0;
+    border-left: 2px solid #6d6d6d;
+    height: 100%;
+  }
+}
+
+.line {
+  background: #6d6d6d;
+  width: 80%;
+  height: 0.5px;
+  border: 0.5px solid #6d6d6d;
+
+  @media (--media-max-medium) {
+    display: none;
+  }
+}

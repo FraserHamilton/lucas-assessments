@@ -3,10 +3,17 @@
 
 .root {
   position: relative;
-  color: var(--color-black, #000);
   display: flex;
-  margin: 0 auto;
-  max-width: var(--width-small);
+  width: 100%;
+  box-sizing: border-box;
+  padding: 0 10%;
+  font-family: "Helvetica Neue";
+  background-color: #fff;
+  @media (--media-max-medium) {
+    padding: 5%;
+    display: flex;
+    justify-content: space-between;
+  }
 }
 
 .root a {
@@ -14,36 +21,23 @@
   text-decoration: inherit;
 }
 
+.brandingContainer {
+  display: flex;
+  align-items: center;
+}
+
 .branding {
-  font-size: inherit;
+  font-size: var(--font-title3-size);
+  @media (--media-max-medium) {
+    font-size: var(--font-base-size);
+  }
   font-weight: inherit;
-  text-transform: uppercase;
   margin: 0;
   padding: 0;
+}
 
-  @nest & > a {
-    display: block;
-    padding: 1.5em;
-
-    @supports (padding-top: env(safe-area-inset-top)) {
-      padding-left: calc(env(safe-area-inset-left) + 1.5rem);
-    }
-  }
-
-  @nest & img, & svg {
-    height: calc(var(--font-base-line-height) * 1.5rem);
-    width: auto;
-    color: inherit;
-    vertical-align: top;
-  }
-
-  @nest & svg path {
-    fill: currentColor;
-  }
-
-  @media (--media-max-medium) {
-    flex: 1;
-  }
+.accentText {
+  color: var(--color-accent);
 }
 
 .logo {
@@ -77,7 +71,9 @@
     left: 0;
     top: 100%;
     width: 100%;
-    background-color: var(--color-black, #000);
+    background-color: #4950ba;
+    padding: 0;
+
     color: var(--color-white, #fff);
 
     @nest .root[data-show-nav="true"] & {
@@ -90,7 +86,7 @@
   display: flex;
   white-space: nowrap;
   align-items: stretch;
-  line-height: calc(var(--font-base-line-height) * 1.5rem);
+  /* line-height: calc(var(--font-base-line-height) * 1.5rem); */
 
   @nest & > a {
     display: block;
@@ -131,7 +127,7 @@
   background: none;
   color: inherit;
   margin: 0;
-  padding: 1.5rem;
+  padding: 0.5rem;
   outline: none;
 
   @media (--media-min-medium) {

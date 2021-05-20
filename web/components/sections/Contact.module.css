@@ -1,0 +1,119 @@
+@import "../../styles/custom-media.css";
+@import "../../styles/custom-properties.css";
+
+.root {
+  background-color: #ffff;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 4rem;
+}
+
+.wrapper {
+  width: 80%;
+}
+
+.content {
+  display: flex;
+  @media (--media-max-medium) {
+    flex-direction: column;
+  }
+}
+
+.formRow {
+  font-weight: 600;
+  margin-bottom: 1rem;
+}
+
+.textContainer {
+  flex: 1;
+}
+
+.contactLine {
+  margin-top: 2rem;
+  @media (--media-max-medium) {
+    margin-top: 1rem;
+  }
+}
+
+.emailContainer {
+  margin-top: 2rem;
+  color: var(--color-accent);
+  font-weight: 600;
+  @media (--media-max-medium) {
+    margin-bottom: 2rem;
+  }
+}
+
+.formContainer {
+  flex: 1;
+}
+
+.formInput {
+  background-color: #edf1f7;
+  border: none;
+  font-size: var(--font-base-size);
+  line-height: var(--font-base-line-height);
+  font-weight: 300;
+  margin-top: 0.5rem;
+  width: 100%;
+  padding: 0.5rem 1rem;
+  box-sizing: border-box;
+  font-family: "Roboto";
+  border-radius: 8px;
+  resize: none;
+  @media (--media-max-medium) {
+    font-size: var(--font-small-size);
+    line-height: var(--font-small-line-height);
+  }
+}
+
+.sendButton {
+  background-color: var(--color-accent);
+  color: #fff;
+  margin: 0;
+  padding: 0.5rem 2rem;
+  font-family: "Roboto";
+  font-size: var(--font-base-size);
+  line-height: var(--font-small-base-height);
+  border: 0;
+  border-radius: 8px;
+  cursor: pointer;
+  @media (--media-max-medium) {
+    font-size: var(--font-small-size);
+    line-height: var(--font-small-line-height);
+  }
+}
+
+.heading {
+  margin: 0;
+  padding: 0;
+  font-size: var(--font-title2-size);
+  line-height: var(--font-title2-line-height);
+  margin-bottom: 3rem;
+  font-family: "Helvetica Neue";
+  @media (--media-max-medium) {
+    font-size: var(--font-title3-size);
+    line-height: var(--font-title3-line-height);
+    margin-bottom: 2rem;
+  }
+}
+
+.labelGroups {
+  display: flex;
+  flex-direction: column;
+}
+
+.buttonContainer {
+  display: flex;
+  justify-content: center;
+}
+
+input:focus {
+  outline-color: var(--color-accent);
+}
+
+textarea:focus {
+  outline-color: var(--color-accent);
+}
