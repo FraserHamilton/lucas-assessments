@@ -27,19 +27,25 @@ function Contact(props) {
             </div>
           </div>
           <div className={styles.formContainer}>
-            <form name="contact" netlify>
+            <form name="contact" action="/success" method="POST" data-netlify="true">
               <input type="hidden" name="form-name" value="contact" />
               <div className={styles.formRow}>
                 <p>Name</p>
-                <input type="text" name="name" className={styles.formInput} />
+                <input type="text" name="name" id="yourname" className={styles.formInput} />
               </div>
               <div className={styles.formRow}>
                 <p>Email</p>
-                <input type="email" name="email" className={styles.formInput} />
+                <input type="email" name="email" id="youremail" className={styles.formInput} />
               </div>
               <div className={styles.formRow}>
                 <p>Message</p>
-                <textarea type="text" name="message" rows="4" className={styles.formInput} />
+                <textarea
+                  type="text"
+                  name="message"
+                  id="yourmessage"
+                  rows="4"
+                  className={styles.formInput}
+                />
               </div>
               <div className={styles.buttonContainer}>
                 <button type="submit" className={styles.sendButton}>
