@@ -23,7 +23,7 @@ function Who(props) {
             <p className={styles.footerText}>{tagline}</p>
             <SimpleBlockContent blocks={contentText} />
             <div className={styles.images}>
-              <img className={styles.signatureImage} src={urlFor(sigImage)} />
+              {/* <img className={styles.signatureImage} src={urlFor(sigImage)} /> */}
               <img className={styles.accImage} src={urlFor(accImage)} />
             </div>
           </div>
