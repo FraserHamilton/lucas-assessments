@@ -34,6 +34,7 @@
   font-weight: inherit;
   margin: 0;
   padding: 0;
+  cursor: pointer;
 }
 
 .accentText {
@@ -71,7 +72,7 @@
     left: 0;
     top: 100%;
     width: 100%;
-    background-color: #4950ba;
+    background-color: #6b74ff;
     padding: 0;
 
     color: var(--color-white, #fff);
@@ -80,6 +81,10 @@
       display: block;
     }
   }
+}
+
+.navItem:hover {
+  color: #6b74ff;
 }
 
 .navItem {
