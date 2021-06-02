@@ -79,7 +79,7 @@ class Header extends Component {
         <div className={styles.brandingContainer}>
           <Link
             href={{
-              pathname: "/LandingPage",
+              pathname: "/Home",
               query: {
                 slug: "/",
               },
@@ -93,21 +93,20 @@ class Header extends Component {
             </h1>
           </Link>
         </div>
-        <nav className={styles.nav}>
+        {/* <nav className={styles.nav}>
           <ul className={styles.navItems}>
             {navItems &&
               navItems.map((item) => {
                 const { slug, title, _id } = item;
-                const isActive =
-                  router.pathname === "/LandingPage" && router.query.slug === slug.current;
+                const isActive = router.pathname === "/Home" && router.query.slug === slug.current;
                 return (
                   <li key={_id} className={styles.navItem}>
                     <Link
                       href={{
-                        pathname: "/LandingPage",
+                        pathname: "/Home",
                         query: { slug: slug.current },
                       }}
-                      as={`/${slug.current}`}
+                      as={slug.current === "/" ? "/" : `/${slug.current}`}
                       prefetch
                     >
                       <a data-is-active={isActive ? "true" : "false"}>{title}</a>
@@ -119,7 +118,7 @@ class Header extends Component {
           <button className={styles.showNavButton} onClick={this.handleMenuToggle}>
             <HamburgerIcon className={styles.hamburgerIcon} />
           </button>
-        </nav>
+        </nav> */}
       </div>
     );
   }
