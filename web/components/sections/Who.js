@@ -23,7 +23,6 @@ function Who(props) {
             <p className={styles.footerText}>{tagline}</p>
             <SimpleBlockContent blocks={contentText} />
             <div className={styles.images}>
-              {/* <img className={styles.signatureImage} src={urlFor(sigImage)} /> */}
               <img className={styles.accImage} src={urlFor(accImage)} />
             </div>
           </div>
@@ -31,23 +30,6 @@ function Who(props) {
             <img className={styles.personImage} src={urlFor(personImage)} />
           </div>
         </div>
-        {/* <div className={styles.tiledBg} style={style}>
-        <div className={styles.container}>
-          <div className={styles.left}>
-            <div>
-              <h3 className={styles.heading}>{heading}</h3>
-              <p className={styles.tag}>{tagline}</p>
-            </div>
-            <img className={styles.personImageMobile} src={urlFor(personImage)} />
-            <div className={styles.buttonContainer}>
-              <div className={styles.buttonInner}>
-                <Button text={buttonText} />
-              </div>
-            </div>
-          </div>
-          <img className={styles.personImage} src={urlFor(personImage)} />
-        </div>
-      </div> */}
       </div>
     </div>
   );
