@@ -23,11 +23,15 @@ function Who(props) {
             <p className={styles.footerText}>{tagline}</p>
             <SimpleBlockContent blocks={contentText} />
             <div className={styles.images}>
-              <img className={styles.accImage} src={urlFor(accImage)} />
+              <img className={styles.accImage} src={urlFor(accImage)} alt="Stuart Lucas" />
             </div>
           </div>
           <div className={styles.imageContainer}>
-            <img className={styles.personImage} src={urlFor(personImage)} />
+            <img
+              className={styles.personImage}
+              src={urlFor(personImage)}
+              alt="Dyslexia Scotland Logo"
+            />
           </div>
         </div>
       </div>

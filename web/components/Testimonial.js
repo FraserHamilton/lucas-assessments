@@ -14,7 +14,7 @@ function Testimonial(props) {
   return (
     <div className={styles.root} onClick={() => setSelectedIndex(index)}>
       <div className={`${styles.attribution} ${selected && styles.selected}`}>
-        <img src={urlFor(image).width(60).auto("format").url()}></img>
+        <img src={urlFor(image).width(60).auto("format").url()} alt={`Headshot Of ${name}`}></img>
         <div>
           <p>
             <span>{name}</span>

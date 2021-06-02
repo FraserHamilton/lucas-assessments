@@ -22,7 +22,7 @@ function Hero(props) {
 
   return (
     <div className={styles.hero}>
-      <img className={styles.letters} src={urlFor(backgroundImage)} />
+      <img className={styles.letters} src={urlFor(backgroundImage)} alt="Alphabet Background" />
       <div className={styles.wrapper}>
         <div className={styles.content}>
           <h1 className={styles.title}>
