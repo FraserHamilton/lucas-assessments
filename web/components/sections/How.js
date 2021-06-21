@@ -12,11 +12,7 @@ import styles from "./How.module.css";
 
 function How(props) {
   const { heading, text, buttonText } = props;
-  // const style = backgroundImage
-  //   ? {
-  //       backgroundImage: `url("${urlFor(backgroundImage).width(2000).auto("format").url()}")`,
-  //     }
-  //   : { backgroundColor: "#fff" };
+
   return (
     <div className={styles.root}>
       <div className={styles.wrapper}>
@@ -56,57 +52,6 @@ function How(props) {
               recommendations.
             </p>
           </div>
-
-          {/* <SimpleBlockContent blocks={text} />
-          <div className={styles.footer}>
-            <div className={styles.button}>
-              <Button text="Arrange Asssessment" />
-            </div>
-            <div className={styles.steps}>
-              <div className={styles.row}>
-                <div className={styles.step}>
-                  <div className={styles.iconContainer}>
-                    <Envelope className={styles.icon} />
-                  </div>
-                </div>
-                <Divider />
-                <div className={styles.step}>
-                  <div className={styles.iconContainer}>
-                    <Calendar className={styles.icon} />
-                  </div>
-                </div>
-                <Divider />
-                <div className={styles.step}>
-                  <div className={styles.iconContainer}>
-                    <Clipboard className={styles.icon} />
-                  </div>
-                </div>
-                <Divider />
-                <div className={styles.step}>
-                  <div className={styles.iconContainer}>
-                    <Chart className={styles.icon} />
-                  </div>
-                </div>
-              </div>
-              <div className={`${styles.row} ${styles.labels}`}>
-                <div className={styles.step}>
-                  <p className={styles.label}>Contact</p>
-                </div>
-                <div className={styles.step}></div>
-                <div className={styles.step}>
-                  <p className={styles.label}>Book</p>
-                </div>
-                <div className={styles.step}></div>
-                <div className={styles.step}>
-                  <p className={styles.label}>Assess</p>
-                </div>
-                <div className={styles.step}></div>
-                <div className={styles.step}>
-                  <p className={styles.label}>Results</p>
-                </div>
-              </div>
-            </div>
-          </div>  */}
         </div>
       </div>
     </div>
