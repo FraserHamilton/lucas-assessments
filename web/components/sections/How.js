@@ -20,13 +20,13 @@ function How(props) {
   return (
     <div className={styles.root}>
       <div className={styles.wrapper}>
-        <h3 className={styles.heading}>{heading}</h3>
+        <h2 className={styles.heading}>{heading}</h2>
         <div className={styles.content}>
           <div className={`${styles.column} ${styles.rightPad}`}>
             <div className={styles.iconContainer}>
               <Envelope className={styles.icon} />
             </div>
-            <h2 className={styles.title}>Contact</h2>
+            <h3 className={styles.title}>Contact</h3>
             <p>
               If you wish to arrange an asessment to look at the possibility of dyslexia (SpLD) you
               can get in contact using the form or email at the end of this webpage.
@@ -36,7 +36,7 @@ function How(props) {
             <div className={styles.iconContainer}>
               <Clipboard className={styles.icon} />
             </div>
-            <h2 className={styles.title}>Assessment</h2>
+            <h3 className={styles.title}>Assessment</h3>
             <p>
               An assessment usually takes about 3 hours. The assessment is carried out on a
               one-to-one basis. All children under the age of 16 must be accompanied by a
@@ -48,7 +48,7 @@ function How(props) {
             <div className={styles.iconContainer}>
               <Chart className={styles.icon} />
             </div>
-            <h2 className={styles.title}>Results</h2>
+            <h3 className={styles.title}>Results</h3>
             <p>
               A short feedback session can take place on completion of the assessment and on receipt
               of the report, a follow-up phone call can be made if you have any questions. The

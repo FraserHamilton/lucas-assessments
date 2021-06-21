@@ -30,15 +30,15 @@ function Contact(props) {
             <form name="contact" action="/success" method="POST" data-netlify="true">
               <input type="hidden" name="form-name" value="contact" />
               <div className={styles.formRow}>
-                <p>Name</p>
+                <label for="yourname">Name</label>
                 <input type="text" name="name" id="yourname" className={styles.formInput} />
               </div>
               <div className={styles.formRow}>
-                <p>Email</p>
+                <label for="youremail">Email</label>
                 <input type="email" name="email" id="youremail" className={styles.formInput} />
               </div>
               <div className={styles.formRow}>
-                <p>Message</p>
+                <label for="yourmessage">Message</label>
                 <textarea
                   type="text"
                   name="message"
