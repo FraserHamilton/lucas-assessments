@@ -14,7 +14,7 @@ function Contact(props) {
           <div className={styles.textContainer}>
             <div style={{ paddingRight: "1rem" }}>
               <p>
-                Want to arrange an assessment, recieve more information on the services offered or
+                Want to arrange an assessment, receive more information on the services offered or
                 ask a question?
               </p>
               <p className={styles.contactLine}>
