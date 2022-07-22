@@ -30,7 +30,7 @@ function Hero(props) {
             <br />
             Throughout{" "}
             <span className={styles.accentText}>
-              Edinburgh <br /> And The Lothians
+              <br /> Central Scotland
             </span>
           </h1>
         </div>
