@@ -22,7 +22,7 @@ function Contact(props) {
               </p>
               <div className={styles.emailContainer}>
                 <p>Email</p>
-                <p style={{ color: "#000", marginTop: "0.5rem" }}>stuart363lucas@btinternet.com</p>
+                <p style={{ color: "#000", marginTop: "0.5rem" }}>lucassessment@gmail.com</p>
               </div>
             </div>
           </div>
