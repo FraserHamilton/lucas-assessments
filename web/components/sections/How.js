@@ -34,10 +34,10 @@ function How(props) {
             </div>
             <h3 className={styles.title}>Assessment</h3>
             <p>
-              An assessment usually takes about 3 hours. The assessment is carried out on a
-              one-to-one basis. All children under the age of 16 must be accompanied by a
-              parent/carer. The cost of the assessment is £450, and this can be paid via bank
-              transfer on the day of the assessment.
+              The appointment is for four hours. The assessment is carried out on a one-to-one
+              basis. All children under the age of 16 must be accompanied by a parent/carer. The
+              cost of the assessment is between £400-£500 (depending on location), and this can be
+              paid via bank transfer on the day of the assessment.
             </p>
           </div>
           <div className={styles.column}>
