@@ -26,12 +26,15 @@ function Hero(props) {
       <div className={styles.wrapper}>
         <div className={styles.content}>
           <h1 className={styles.title}>
-            Dyslexia Assessments
+            {/* Dyslexia Assessments
             <br />
             Throughout{" "}
             <span className={styles.accentText}>
               <br /> Central Scotland
-            </span>
+            </span> */}
+            Dyslexia Assessments <br /> in Edinburgh & The Lothians, <br />
+            Greater Glasgow <br />
+            and Ayrshire
           </h1>
         </div>
       </div>
