@@ -24,8 +24,8 @@ function How(props) {
             </div>
             <h3 className={styles.title}>Contact</h3>
             <p>
-              If you wish to arrange an asessment to look at the possibility of dyslexia (SpLD) you
-              can get in contact using the form or email at the end of this webpage.
+              For an assessment for dyslexia (SpLD), please contact me via the form/email at the
+              foot of this webpage.
             </p>
           </div>
           <div className={`${styles.column} ${styles.rightPad}`}>
